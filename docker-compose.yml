@@ -1,0 +1,9 @@
+version: '3.5'
+services:
+    web:
+        build: .
+        container_name: docker-nodejs-express
+        ports:
+            - "3000:3000"
+        volumes:
+            - .:/usr/src/app/
