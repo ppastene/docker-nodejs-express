@@ -3,7 +3,9 @@ services:
     web:
         build: .
         container_name: docker-nodejs-express
+        command: npm run dev
         ports:
             - "3000:3000"
         volumes:
-            - .:/usr/src/app/
+            - .:/app
+            - /app/node_modules

@@ -1,9 +1,7 @@
-FROM node:12.18
+FROM node:12.18.2-alpine3.12
 
-WORKDIR /usr/src/app/
+WORKDIR /app
 
-COPY package.json ./
-RUN npm cache clean --force && npm install
+COPY package*.json ./
 
-EXPOSE 3000
-CMD [ "npm", "run", "dev" ]
+RUN npm install
