@@ -7,5 +7,5 @@ services:
         ports:
             - "3000:3000"
         volumes:
-            - .:/app
+            - ./src:/app
             - /app/node_modules

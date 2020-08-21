@@ -1,5 +1,5 @@
 # Docker NodeJS Express
-Ejemplo de un contenedor Docker que ejecuta una aplicación NodeJS usando persistencia
+Ejemplo de un contenedor Docker que ejecuta una aplicación NodeJS usando persistencia. Se usa ExpressJS para mostrar un simple "Hello World" que puede ser modificado en el archivo index.js
 ## Archivos
 El proyecto incluye los siguientes archivos:
 + README.md: Este readme

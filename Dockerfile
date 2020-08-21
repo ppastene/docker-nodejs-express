@@ -1,7 +1,7 @@
-FROM node:12.18.2-alpine3.12
+FROM node:lts-alpine
 
 WORKDIR /app
 
-COPY package*.json ./
+COPY ./src/package*.json ./
 
 RUN npm install
